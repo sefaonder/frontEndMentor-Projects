@@ -11,7 +11,9 @@ function App() {
   useEffect(() => {
     // this variable can be posted on API
     console.log("email: ", email);
-    setIsSigned(true);
+    if (email !== "") {
+      setIsSigned(true);
+    }
   }, [email]);
 
   return (

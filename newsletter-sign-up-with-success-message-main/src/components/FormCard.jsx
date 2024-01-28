@@ -4,9 +4,10 @@ import CustomInput from "./widgets/CustomInput";
 import InfoElement from "./widgets/InfoElement";
 import illDesktop from "../assets/illustration-sign-up-desktop.svg";
 import illMobile from "../assets/illustration-sign-up-mobile.svg";
-import { useEffect, useState } from "react";
+import { useState } from "react";
 
 function FormCard({ setForm }) {
+  const [email, setEmail] = useState("");
   return (
     <div className='card-container'>
       <div className='form-container'>
@@ -20,13 +21,9 @@ function FormCard({ setForm }) {
           <InfoElement label='And much more!' />
         </div>
 
-        <CustomInput
-          setForm={(value) => {
-            setForm(value);
-          }}
-        />
+        <CustomInput setForm={(value) => setEmail(value)} />
 
-        <button className='form-submit-button'>
+        <button className='form-submit-button' onClick={() => setForm(email)}>
           Subscribe to monthly newsletter
         </button>
       </div>
