@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link rel="stylesheet" href="./style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+  
+  <title>Frontend Mentor | Results summary component</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center;margin-top: 2rem; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+
+  <main class="card-container">
+    <div class="result-container">
+      <p class="result-head">Your Result</p>
+      <div class="result-number-container">
+        <span class="result-number">76</span>
+        <span class="result-number-sub">of 100</span>
+      </div>
+      <div class="result-text-container">
+        <p class="result-text-header">Great</p>
+        <p class="result-text">You scored higher than 65% of the people who have taken these tests.</p>
+      </div>
+    </div>
+    <div class="summary-container">
+      <p class="summary-header">Summary</p>
+      <div class="summary-notes-container">
+        <div class="summary-notes-item item-red">
+          <div class="summary-notes-icon-container">
+            <img src="assets/images/icon-reaction.svg" alt="icon"/>
+            <span>Reaction</span>
+          </div>
+          <div class="summary-notes-number-container">
+            <span class="text-bold">80</span>
+            <span class="text-normal"> / 100</span>
+          </div>
+        </div>
+
+        <div class="summary-notes-item item-yellow">
+          <div class="summary-notes-icon-container">
+            <img src="assets/images/icon-memory.svg" alt="icon"/>
+            <span>Memory</span>
+          </div>
+          <div class="summary-notes-number-container">
+            <span class="text-bold">92</span>
+            <span class="text-normal"> / 100</span>
+          </div>
+        </div>
+
+        <div class="summary-notes-item item-green">
+          <div class="summary-notes-icon-container">
+            <img src="assets/images/icon-verbal.svg" alt="icon"/>
+            <span>Verbal</span>
+          </div>
+          <div class="summary-notes-number-container">
+            <span class="text-bold">61</span>
+            <span class="text-normal"> / 100</span>
+          </div>
+        </div>
+
+        <div class="summary-notes-item item-blue">
+          <div class="summary-notes-icon-container">
+            <img src="assets/images/icon-visual.svg" alt="icon"/>
+            <span>Visual</span>
+          </div>
+          <div class="summary-notes-number-container">
+            <span class="text-bold">72</span>
+            <span class="text-normal"> / 100</span>
+          </div>
+        </div>
+      </div>
+      <button class="confirm-button">Continue</button>
+    </div>
+  </main>
+  
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="https://www.frontendmentor.io/profile/sefaonder" target="_blank">Sefa Önder</a>.
+  </div>
+</body>
+</html>
