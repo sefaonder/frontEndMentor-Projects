@@ -36,7 +36,7 @@ const Container = styled.main`
 // StepSection
 
 const StepSection = styled.section`
-  background-image: url(${(props) => props.$bgDesktop});
+  background-image: url('./assets/images/bg-sidebar-desktop.svg');
   background-position: center;
   background-repeat: no-repeat;
   background-size: contain;
@@ -44,15 +44,13 @@ const StepSection = styled.section`
   height: 568px;
 
   @media (max-width: 600px) {
-    background-image: url(${(props) => props.$bgMobile});
+    background-image: url('./assets/images/bg-sidebar-mobile.svg');
 
     width: 100%;
     height: 192px;
     display: flex;
     justify-content: center;
     align-items: center;
-    /* Burası düzeltilecek */
-    /* height: 1px; */
   }
 `;
 
@@ -109,7 +107,6 @@ const formDto = {
 function App() {
   const [step, setStep] = useState(0);
   const [form, setForm] = useState(formDto);
-  const [error, setError] = useState();
 
   console.log(form);
 
